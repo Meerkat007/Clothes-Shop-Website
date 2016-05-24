@@ -1,0 +1,23 @@
+{
+  "name": "my-clothes-shop",
+  "authors": [
+    "Yuan Ji"
+  ],
+  "description": "A clothes shop project",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.5",
+    "angular-route": "^1.5.5",
+    "jquery": "~2.2.4",
+    "bootstrap": "^3.3.6"
+  }
+}
