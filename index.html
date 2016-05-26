@@ -9,8 +9,10 @@
         <base href="/">
 
         <!-- style sheets -->
-        <link href="styles/main.css" rel="stylesheet" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="app/ladies/ladies.css" />
+        <link rel="stylesheet" href="app/product_area/product.css" />
 
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -22,29 +24,31 @@
     <body ng-app="myClothingApp">
         <div class="container">
             <my-header></my-header>
-            <div ng-view></div>
-            <my-footer></my-footer>
+            <div ng-view class="view-container"></div>
+            <my-footer class="footer"></my-footer>
         </div> 
 
         <script src="app/app.js"></script>
 
-        
-
         <!-- header -->
         <script src="app/header/headerDirective.js"></script>
 
-
-
-        <!-- main-view -->
-        <script src="app/main-view/mainViewController.js"></script>
-        <script src="app/main-view/carouselDirective.js"></script>
-
-
-
+        <!-- main view -->
+        <script src="app/main_view/mainViewController.js"></script>
+        <script src="app/main_view/carouselDirective.js"></script>
+        
         <!-- footer -->
         <script src="app/footer/footerDirective.js"></script>
         <script src="app/footer/footerjQuery.js"></script>
+        
+        <!-- product area -->
+        <script src="app/product_area/productItemDirective.js"></script>
 
+        <!-- ladies -->
+        <script src="app/ladies/LadiesController.js"></script>
+        
+        <!-- men -->
+        <script src="app/men/MenController.js"></script>
     </body>
 </html>
 

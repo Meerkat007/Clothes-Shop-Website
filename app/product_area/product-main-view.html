@@ -1,0 +1,17 @@
+<div class="product-main-view">
+	<div class="mobile-subheader">
+		which page is user at, how many items in this page. 
+	</div>
+	<aside class="product-categories">
+		<ul class="list-unstyled">
+			<li ng-repeat="category in categories">
+				{{category}}
+			</li>
+		</ul>
+	</aside>
+	<section class="products-area">
+		<div class="product-item" ng-repeat="product in products">
+			<product-item-directive input="product"></product-item-directive>
+		</div>
+	</section>
+</div>

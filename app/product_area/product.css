@@ -1,0 +1,57 @@
+/* ------ product area ------ */
+.product-main-view {
+    display: block;
+}
+
+.product-categories {
+    display: none;
+    float: left;    
+    width: 16%;
+}
+
+.products-area {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.product-item {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.product-item:nth-child(2n) {
+    margin-left: 2%;
+}
+
+.product-item span {
+    display: block;
+    font-size: 1.1em;
+}
+
+.product-item img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+/* ------ media queries ------ */
+@media screen and (min-width: 1023px) {
+    .products-area {
+        float: left;
+        width: 84%;
+        text-align: left;
+    }
+    
+    .product-item {
+        width: 48%;
+    }
+    
+    .product-item:nth-child(2n) {
+        margin-left: 4%;
+    }
+    
+    .product-categories {
+        display: inline-block;
+    }
+}
