@@ -98,6 +98,7 @@ nav {
     background-color: #ffffff;
 }
 
+/* footerPanel, which will only be diaplayed in small screen */
 .footerPanel .panel {
     border-radius: 0px;
     border-left: 0px;
@@ -109,10 +110,6 @@ nav {
     color: #808080;
 }
 
-.panel-default > .panel-heading {
-    background-color: #ffffff;
-}
-
 .footerPanel a {
     color: #333333;
 }
@@ -121,10 +118,24 @@ nav {
     font-size: 0.9em;
 }
 
+/* Override bootstrap panel properties */
+.panel-group {
+    margin-bottom: 10px;
+}
+
+.list-group {
+    margin-bottom: 0;
+}
+
+.panel-default > .panel-heading {
+    background-color: #ffffff;
+}
+
 .list-group-item {
     font-size: 0.8em;
 }
 
+/* footerColumns, which will only be displayed in large screen*/
 .footerColumns {
     display: block;
     clear: both;
