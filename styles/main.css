@@ -13,6 +13,13 @@ a:visited {
     color: #333333;
 }
 
+.view-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 /*------------- header -------------*/
 
 nav {
@@ -149,6 +156,10 @@ nav {
 }
 
 @media screen and (min-width: 1023px) {
+    a:hover {
+        text-decoration: underline;
+    }
+    
     .mainCategories > ul li {
         float: left;
         width: 33%;

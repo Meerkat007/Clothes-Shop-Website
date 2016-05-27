@@ -1,7 +1,7 @@
 <div>
     <ul class="list-unstyled product-category">
-        <li ng-repeat="category in categories">
-            <a ng-href="{{}}">{{category}}</a>
-        </li>
+        <a ng-href="/{{gender}}/{{category}}" ng-repeat="category in categories">
+            <li >{{category}}</li>
+        </a>
     </ul>
 </div>

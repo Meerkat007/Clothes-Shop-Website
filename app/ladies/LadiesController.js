@@ -1,5 +1,7 @@
 angular.module('myClothingApp')
-.controller('LadiesController', ['$scope', function ($scope) {
+.controller('LadiesController', ['$scope', '$routeParams', function ($scope, $routeParams) {
+    $scope.gender = 'ladies';
+    $scope.selectedCategory = $routeParams.category;
     $scope.categories = [
         'Dresses', 
         'Tops',

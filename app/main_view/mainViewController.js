@@ -11,8 +11,8 @@
         $scope.ladieshref = 'category-list/ladies';
         $scope.menhref = 'category-list/men';
     } else {
-        $scope.ladieshref = 'ladies';
-        $scope.menhref = 'men';
+        $scope.ladieshref = 'ladies/dresses';
+        $scope.menhref = 'men/T-shirts';
     }
         
 }]);
