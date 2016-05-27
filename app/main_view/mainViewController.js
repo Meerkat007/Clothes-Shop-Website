@@ -13,8 +13,8 @@
         $scope.kidshref = 'category-list/kids';
     } else {
         $scope.ladieshref = 'ladies/dresses';
-        $scope.menhref = 'men/T-shirts';
-        $scope.kidshref = 'kids/Newborn';
+        $scope.menhref = 'men/t-shirts';
+        $scope.kidshref = 'kids/newborn-0-9m';
     }
         
 }]);

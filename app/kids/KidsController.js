@@ -2,13 +2,13 @@ angular.module('myClothingApp')
 .controller('KidsController', ['$scope', '$routeParams', 'nameService', function($scope, $routeParams, nameService) {
     $scope.gender = 'kids';
     $scope.categories = [
-        {name: 'Newborn 0-9m', link: 'Newborn-0-9m'},
-        {name: 'Baby Girl 4m-2y', link: 'Baby-Girl-4m-2y'},
-        {name: 'Baby Boy 4m-2y', link: 'Baby-Boy-4m-2y'},
-        {name: 'Girls 18m-10y', link: 'Girls-18m-10y'},
-        {name: 'Boys 18m-10y', link: 'Boys-18m-10y'},
-        {name: 'Girls 8-14y+', link: 'Girls-8-14y'},
-        {name: 'Boys 8-14y+', link: 'Boys-8-14y'}
+        {name: 'Newborn 0-9m', link: 'newborn-0-9m'},
+        {name: 'Baby Girl 4m-2y', link: 'baby-Girl-4m-2y'},
+        {name: 'Baby Boy 4m-2y', link: 'baby-Boy-4m-2y'},
+        {name: 'Girls 18m-10y', link: 'girls-18m-10y'},
+        {name: 'Boys 18m-10y', link: 'boys-18m-10y'},
+        {name: 'Girls 8-14y+', link: 'girls-8-14y'},
+        {name: 'Boys 8-14y+', link: 'boys-8-14y'}
     ];
    
     $scope.selectedCategory = nameService.findName($scope.categories, $routeParams.category);
