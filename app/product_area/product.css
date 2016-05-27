@@ -38,6 +38,7 @@
     color: #888888;
 }
 
+/* product list items */
 .product-list-item {
     display: inline-block;
     width: 48%;
@@ -72,18 +73,22 @@
 
 /* ------ media queries ------ */
 @media screen and (min-width: 1023px) {
+    .mobile-subheader {
+        display: none;    
+    }
+    
     .products-area {
         float: left;
         width: 84%;
         text-align: left;
     }
     
-    .product-item {
-        width: 48%;
+    .product-list-item {
+        width: 24%;
     }
     
-    .product-item:nth-child(2n) {
-        margin-left: 4%;
+    .product-list-item:not(:nth-child(4n+1)) {
+        margin-left: 1.33333333%;
     }
     
     .product-categories-desktop {

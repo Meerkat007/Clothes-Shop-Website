@@ -1,8 +1,9 @@
 'use restrict'
 
 angular.module('myClothingApp')
-.controller('MenController', ['$scope', function($scope) {
+.controller('MenController', ['$scope', '$routeParams', function($scope, $routeParams) {
     $scope.gender = 'men';
+    $scope.selectedCategory = $routeParams.category;
     $scope.categories = [
         'T-shirts',
         'Hoodies',

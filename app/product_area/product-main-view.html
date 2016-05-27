@@ -1,7 +1,5 @@
 <div class="product-main-view">
-	<div class="mobile-subheader">
-		which page is user at, how many items in this page. 
-	</div>
+	<!-- navigation on the side of the browser -->
 	<aside class="product-categories-desktop">
 		<h2>{{gender}}</h2>
 		<ul class="list-unstyled">
@@ -10,15 +8,22 @@
 			</a>
 		</ul>
 	</aside>
+	<!-- product listing area -->
 	<section class="products-area">
 		<div class="product-list-heading">
 			<h2>{{selectedCategory}}</h2>
+			<!-- breadcrumbs for desktop -->
 			<div class="breadcrumbs">
 				<a href="/">clothes shop</a><span> / <span>
 				<a ng-href="/{{gender}}">{{gender}}</a><span> / <span>
 				<span class="current-category">{{selectedCategory}}<span>
 			</div>
+			<!-- breadcrumbs for mobile -->
+			<div class="mobile-subheader">
+				which page is user at, how many items in this page. 
+			</div>
 		</div>
+		<!-- product list -->
 		<div class="product-list-container">
 			<div class="product-list-item" ng-repeat="product in products">
 				<product-item-directive input="product"></product-item-directive>
