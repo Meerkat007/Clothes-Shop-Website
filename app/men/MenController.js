@@ -5,6 +5,12 @@ angular.module('myClothingApp')
     $scope.categories = [
         'T-shirts',
         'Hoodies',
-        'Sweaters'
+        'Sweaters',
+        'Shorts',
+        'Swimwear',
+        'Trousers',
+        'Jeans',
+        'Jackets',
+        'Shoes'
     ];
 }]);

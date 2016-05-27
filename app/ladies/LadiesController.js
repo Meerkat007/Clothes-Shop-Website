@@ -3,7 +3,13 @@ angular.module('myClothingApp')
     $scope.categories = [
         'Dresses', 
         'Tops',
-        'Skirts'
+        'Skirts',
+        'Shorts',
+        'Swimwear',
+        'Trousers',
+        'Jeans',
+        'Jackets',
+        'Shoes'
         ];
     $scope.products = [
        {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Cut-out dress', price: 29.99},
