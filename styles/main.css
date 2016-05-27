@@ -184,7 +184,7 @@ nav {
 
 @media screen and (max-width: 767px) {
     .view-container {
-        padding-top: 60px;
+        padding-top: 55px;
     }
     
     /* hide navbar-nav when hamburger menu is displayed */
@@ -200,7 +200,7 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
-    #myCarousel .carousel-inner .item:first-child img {
+/*    #myCarousel .carousel-inner .item:first-child img {
         content: url('app/main_view/main_view_images/banner_images/banner-one-small.png');
     }
 
@@ -211,6 +211,7 @@ nav {
      #myCarousel .carousel-inner .item:nth-child(3) img {
         content: url('app/main_view/main_view_images/banner_images/banner-three-small.png');
     }
+    */
 }
 
 

@@ -17,13 +17,13 @@ angular.module('myClothingApp')
     ];
     
     $scope.products = [
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Cut-out dress', price: 29.99},
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Patterned dress', price: 39.99},
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Sleeveless dress', price: 19.99},
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Patterned dress', price: 39.99},
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Patterned dress', price: 39.99},
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Patterned dress', price: 39.99},
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Patterned dress', price: 39.99},
-       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Patterned dress', price: 39.99}
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Cutton T-shirt', price: 29.99},
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Cutton T-shirt', price: 39.99},
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Stretch T-shirt', price: 19.99},
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Stretch T-shirt', price: 39.99},
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Stretch T-shirt', price: 39.99},
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Vest top', price: 39.99},
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Vest top', price: 39.99},
+       {image: 'app/ladies/ladies_images/dresses/dress-sample.png', name: 'Vest top', price: 39.99}
     ];
 }]);
