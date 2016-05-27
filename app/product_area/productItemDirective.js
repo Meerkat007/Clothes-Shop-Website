@@ -3,7 +3,9 @@ angular.module('myClothingApp')
     return {
       restrict: 'E',
       scope: {
-          input: '='
+          input: '=',
+          gender: '=',
+          category: '='
       },
       templateUrl: 'app/product_area/product-item.html'  
     };

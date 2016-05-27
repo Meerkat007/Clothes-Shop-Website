@@ -18,15 +18,11 @@
 				<a ng-href="/{{gender}}">{{gender}}</a><span> / <span>
 				<span class="current-category">{{selectedCategory}}<span>
 			</div>
-			<!-- breadcrumbs for mobile -->
-			<div class="mobile-subheader">
-				which page is user at, how many items in this page. 
-			</div>
 		</div>
 		<!-- product list -->
 		<div class="product-list-container">
 			<div class="product-list-item" ng-repeat="product in products">
-				<product-item-directive input="product"></product-item-directive>
+				<product-item-directive input="product" gender="gender" category="selectedCategory"></product-item-directive>
 			</div>
 		</div>
 	</section>
