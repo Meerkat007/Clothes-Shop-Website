@@ -3,8 +3,8 @@
 	<aside class="product-categories-desktop">
 		<h2>{{gender}}</h2>
 		<ul class="list-unstyled">
-			<a ng-href="{{gender}}/{{category}}" ng-repeat="category in categories">
-				<li>{{category}}</li>
+			<a ng-href="{{gender}}/{{category.link}}" ng-repeat="category in categories">
+				<li>{{category.name}}</li>
 			</a>
 		</ul>
 	</aside>

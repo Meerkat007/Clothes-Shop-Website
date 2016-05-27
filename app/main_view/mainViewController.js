@@ -10,9 +10,11 @@
     if (isMobile()) {
         $scope.ladieshref = 'category-list/ladies';
         $scope.menhref = 'category-list/men';
+        $scope.kidshref = 'category-list/kids';
     } else {
         $scope.ladieshref = 'ladies/dresses';
         $scope.menhref = 'men/T-shirts';
+        $scope.kidshref = 'kids/Newborn';
     }
         
 }]);

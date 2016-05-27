@@ -22,6 +22,14 @@
                 controller: 'MenController',
                 templateUrl: 'app/product_area/product-category.html'
             })
+            .when('/kids/:category', {
+                controller: 'KidsController',
+                templateUrl: 'app/product_area/product-main-view.html'
+            })
+            .when('/category-list/kids', {
+                controller: 'KidsController',
+                templateUrl: 'app/product_area/product-category.html'
+            })
             .otherwise({
                 redirectTo: '/'
             });
