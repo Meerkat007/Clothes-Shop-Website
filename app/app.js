@@ -6,19 +6,19 @@
                 controller: 'MainViewController',
                 templateUrl: 'app/main_view/mainview.html'
             })
-            .when('/ladies', {
+            .when('/ladies/:category', {
                 controller: 'LadiesController',
                 templateUrl: 'app/product_area/product-main-view.html'
             })
-            .when('/men', {
-                controller: 'MenController',
-                templateUrl: 'app/product_area/product-main-view.html'
-            })
-            .when('/ladies-category', {
+            .when('/category-list/ladies', {
                 controller: 'LadiesController',
                 templateUrl: 'app/product_area/product-category.html'
             })
-            .when('/men-category', {
+            .when('/men/:category', {
+                controller: 'MenController',
+                templateUrl: 'app/product_area/product-main-view.html'
+            })
+            .when('/category-list/men', {
                 controller: 'MenController',
                 templateUrl: 'app/product_area/product-category.html'
             })
