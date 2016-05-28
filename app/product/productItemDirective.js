@@ -10,5 +10,5 @@ angular.module('myClothingApp')
                 category: '='
             },
             templateUrl: 'app/product/product-item.html'  
-            };
+        };
     });
