@@ -59,6 +59,7 @@
 /* product list items */
 .product-list-item {
     display: inline-block;
+    vertical-align: top;
     width: 48%;
     margin-bottom: 20px;
 }
@@ -101,7 +102,7 @@
 
 .product-category li {
     display: block;
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: 10px 20px;
     border-bottom: 1px solid #888888;
 }
