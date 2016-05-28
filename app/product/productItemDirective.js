@@ -3,12 +3,12 @@ angular.module('myClothingApp')
         'use strict';
         
         return {
-        restrict: 'E',
-        scope: {
-            input: '=',
-            gender: '=',
-            category: '='
-        },
-        templateUrl: 'app/product/product-item.html'  
-        };
+            restrict: 'E',
+            scope: {
+                input: '=',
+                gender: '=',
+                category: '='
+            },
+            templateUrl: 'app/product/product-item.html'  
+            };
     });
