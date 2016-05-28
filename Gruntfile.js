@@ -1,6 +1,6 @@
 /*global module:false*/
 module.exports = function(grunt) {
-
+  'use strict';
   // Project configuration.
   grunt.initConfig({
     // Metadata.
@@ -12,13 +12,14 @@ module.exports = function(grunt) {
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
     // Task configuration.
     concat: {
-      options: {
-        banner: '<%= banner %>',
-        stripBanners: true
-      },
-      dist: {
-        src: ['lib/<%= pkg.name %>.js'],
-        dest: 'dist/<%= pkg.name %>.js'
+      js: {
+        src: [
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/angular/angular.js',
+          'bower_components/angular-route/angular-route.js',
+          'bower_components/bootstrap/dist/js/bootstrap.js'
+          ],
+        dest: '../build/js/vender/scripts.js'
       }
     },
     uglify: {
@@ -26,7 +27,7 @@ module.exports = function(grunt) {
         banner: '<%= banner %>'
       },
       dist: {
-        src: '<%= concat.dist.dest %>',
+        src: '<%= concat.js.dest %>',
         dest: 'dist/<%= pkg.name %>.min.js'
       }
     },
@@ -45,14 +46,16 @@ module.exports = function(grunt) {
         eqnull: true,
         browser: true,
         globals: {
+          $: true,
           jQuery: true
-        }
+        },
+        predef: ['angular']
       },
       gruntfile: {
         src: 'Gruntfile.js'
       },
       lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
+        src: ['app/**/*.js', 'test/**/*.js']
       }
     },
     qunit: {

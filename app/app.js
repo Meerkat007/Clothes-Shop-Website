@@ -1,6 +1,7 @@
 ﻿angular.module('myClothingApp', ['ngRoute'])
-
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+        'use strict';
+        
         $routeProvider
             .when('/', {
                 controller: 'MainViewController',
@@ -19,5 +20,5 @@
             });
 
         $locationProvider.html5Mode(true);
-}]);
+    }]);
     

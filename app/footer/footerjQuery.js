@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    'use strict';
     $('my-footer').click(function () {
         console.log($(this).data('id'));
     });
