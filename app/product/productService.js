@@ -74,9 +74,9 @@ angular.module('myClothingApp')
                 return categories[gender];
             },
             
-            getProductListing: function(gender, category) {
+            getProductListing: function(gender) {
                 //TODO 
-                //add category
+                //add category as parameter
                 return productListing[gender];
             }
         };

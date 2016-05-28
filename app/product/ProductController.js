@@ -6,5 +6,5 @@ angular.module('myClothingApp')
         $scope.categories = productService.getCategories($scope.gender);
         
         $scope.selectedCategory = nameService.findName($scope.categories, $routeParams.category);
-        $scope.products = productService.getProductListing($scope.gender, $scope.selectedCategory);
+        $scope.products = productService.getProductListing($scope.gender);
     }]);

@@ -1,8 +1,6 @@
 ﻿$(document).ready(function () {
     'use strict';
-    $('my-footer').click(function () {
-        console.log($(this).data('id'));
-    });
+
     $('my-footer').on('show.bs.collapse', '#collapse1', function () {
         $('#collapse-1-icon')
             .removeClass("glyphicon-chevron-down")
