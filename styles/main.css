@@ -51,6 +51,14 @@ nav {
     display: block;
 }
 
+/* hamburger menu */
+#hamburger-menu-list li {
+    font-size: 1.2em;
+    padding: 10px 0;
+    border-top: solid 1px #eeeeee;
+    text-align: center;
+}
+
 /*------------ main view ------------*/
 
 .mainBanner {
