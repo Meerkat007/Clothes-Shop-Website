@@ -7,6 +7,6 @@ angular.module('myClothingApp')
           gender: '=',
           category: '='
       },
-      templateUrl: 'app/product_area/product-item.html'  
+      templateUrl: 'app/product/product-item.html'  
     };
 });
