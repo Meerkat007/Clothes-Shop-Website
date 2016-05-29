@@ -119,6 +119,9 @@
     border-bottom: 1px solid #888888;
 }
 
+
+
+
 /* ------ media queries ------ */
 @media screen and (min-width: 1023px) { 
     .product-list-heading h2 {

@@ -50,6 +50,20 @@ nav {
     display: block;
 }
 
+.dropdown-menu ul {
+    border: 1px solid #888888;
+}
+
+.dropdown-menu li {
+    padding: 10px 5px;
+    text-align: center;
+    border-bottom: 1px solid #888888; 
+}
+
+.dropdown-menu li:last-child {
+    border: none;
+}
+
 /* hamburger menu */
 #hamburger-menu-list li {
     font-size: 1.2em;

@@ -23,7 +23,9 @@
                     <strong>LADIES</strong>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li ng-repeat="category in ladiesCategories">{{category.name}}</li>
+                    <a href="/ladies/{{category.link}}" ng-repeat="category in ladiesCategories"">
+                        <li>{{category.name}}</li>
+                    </a> 
                 </ul>
             </li>
             <li class="dropdown">
@@ -31,7 +33,9 @@
                     <strong>MEN</strong>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li ng-repeat="category in menCategories">{{category.name}}</li>
+                    <a href="/men/{{category.link}}" ng-repeat="category in menCategories">
+                        <li>{{category.name}}</li>
+                    </a>
                 </ul>
             </li>
             <li class="dropdown">
@@ -39,7 +43,9 @@
                     <strong>KIDS</strong>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li ng-repeat="category in kidsCategories">{{category.name}}</li>
+                    <a href="/kids/{{category.link}}" ng-repeat="category in kidsCategories">
+                        <li>{{category.name}}</li>
+                    </a>
                 </ul>
             </li>
         </ul>
