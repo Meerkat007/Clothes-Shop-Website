@@ -23,9 +23,7 @@
                     <strong>LADIES</strong>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li>item1</li>
-                    <li>item2</li>
-                    <li>item3</li>
+                    <li ng-repeat="category in ladiesCategories">{{category.name}}</li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -33,21 +31,15 @@
                     <strong>MEN</strong>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li>item1</li>
-                    <li>item2</li>
-                    <li>item3</li>
+                    <li ng-repeat="category in menCategories">{{category.name}}</li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a calss="navbar-item dropdown-toggle" data-toggle="dropdown">
-
                     <strong>KIDS</strong>
-
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li>item1</li>
-                    <li>item2</li>
-                    <li>item3</li>
+                    <li ng-repeat="category in kidsCategories">{{category.name}}</li>
                 </ul>
             </li>
         </ul>

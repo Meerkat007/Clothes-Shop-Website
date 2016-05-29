@@ -4,6 +4,7 @@
         return {
             restrict: 'E',
             scope: {},
+            controller: 'HeaderController',
             templateUrl: 'app/header/header.html'
             };
         });
