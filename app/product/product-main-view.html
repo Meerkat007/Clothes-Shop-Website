@@ -13,10 +13,7 @@
 		<div class="product-list-heading">
 			<h2>{{selectedCategory}}</h2>
 			<!-- breadcrumbs for desktop -->
-			<div class="breadcrumbs">
-				<a href="/">clothes shop</a><span> / <span>
-				<span class="current-category">{{gender}} {{selectedCategory}}<span>
-			</div>
+			<breadcrumb-directive gender="gender" category="selectedCategory" location="selectedCategory"></breadcrumb-directive>
 		</div>
 		<!-- product list -->
 		<div class="product-list-container">
